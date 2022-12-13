@@ -11,10 +11,20 @@ function App() {
           textAlign: "center",
         }}
       >
-        <h1>ChiPoPo</h1>
         <div style={{ fontSize: "20px", fontWeight: "semi-bold" }}>
-          <Link to="invoices">Invoices</Link> |{" "}
-          <Link to="expenses">Expenses</Link>
+          <div className="nav">
+            <div className="nav_item">
+              <Link to="/">
+                <h4>ChiPoPo</h4>
+              </Link>
+            </div>
+
+            <div className="nav_item">
+              <Link to="/web3">
+                <h4>Web3</h4>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
       <div style={{ padding: "20px" }}>
