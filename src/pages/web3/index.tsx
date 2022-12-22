@@ -1,9 +1,9 @@
-import { checkPrimeSync } from "crypto";
 import { useEffect, useState } from "react";
 import Web3 from "web3";
 import abi_test from "../../libs/abi/abi_test";
 import converter from "hex2dec";
 import "./style.css";
+
 const PageWeb3 = () => {
   const [walletAdressChiPo, setWalletAdressChiPo] = useState("");
   const [walletAdressChiBeo, setWalletAdressChiBeo] = useState("");
@@ -44,7 +44,6 @@ const PageWeb3 = () => {
       type: "function",
     },
   ];
-  console.log({ account });
 
   const init = async () => {
     try {
@@ -62,7 +61,6 @@ const PageWeb3 = () => {
 
   const mint = async () => {
     try {
-      console.log("wallet", walletAdressChiPo);
       // const data = await contract.methods
       //   .set("Hoang Quang Huy")
       //   .send(
@@ -93,8 +91,6 @@ const PageWeb3 = () => {
       rawTransaction.chainId = networkIdValue;
       rawTransaction.gasPrice = converter.decToHex(Number(gasPrice).toString());
 
-      console.log("gas", gas);
-      console.log("gasPrice", gasPrice);
       console.log("account address", account.address);
 
       const balance = await web3.eth.getBalance(

@@ -21,7 +21,17 @@ function App() {
 
             <div className="nav_item">
               <Link to="/web3">
-                <h4>Web3</h4>
+                <h4>EVM</h4>
+              </Link>
+            </div>
+            <div className="nav_item">
+              <Link to="/solana-classic">
+                <h4>Solana-Classic</h4>
+              </Link>
+            </div>
+            <div className="nav_item">
+              <Link to="/solana">
+                <h4>Solana</h4>
               </Link>
             </div>
           </div>

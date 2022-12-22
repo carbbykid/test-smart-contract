@@ -1,5 +1,7 @@
 /// <reference types="react-scripts" />
 
 interface Window {
-    ethereum: any
+    ethereum: any,
+    solana: any,
+    phantom:any
 }
